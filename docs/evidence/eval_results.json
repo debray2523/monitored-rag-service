@@ -1,0 +1,846 @@
+{
+  "k": 4,
+  "summary": {
+    "bm25": {
+      "hit_rate": 1.0,
+      "mrr": 0.962,
+      "precision": 0.25,
+      "ndcg": 0.972,
+      "queries": 13
+    },
+    "dense": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "queries": 13
+    },
+    "hybrid": {
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "queries": 13
+    }
+  },
+  "per_query": [
+    {
+      "id": "q01",
+      "mode": "dense",
+      "span_id": "183b233bfd43b3bf",
+      "question": "What is the recovery time objective for the customer-facing RAG API?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q01",
+      "mode": "bm25",
+      "span_id": "470f57251e487a93",
+      "question": "What is the recovery time objective for the customer-facing RAG API?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.1",
+        "llm_security_policy.pdf p.3",
+        "rag_operations_handbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q01",
+      "mode": "hybrid",
+      "span_id": "0e69e7e4a2408f1b",
+      "question": "What is the recovery time objective for the customer-facing RAG API?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "llm_security_policy.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q02",
+      "mode": "dense",
+      "span_id": "6a860f5140ce7962",
+      "question": "What does error code ERR-LLM-504 mean?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.2",
+        "llm_security_policy.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q02",
+      "mode": "bm25",
+      "span_id": "f6315e00b6045804",
+      "question": "What does error code ERR-LLM-504 mean?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.2",
+        "rag_operations_handbook.pdf p.2",
+        "rag_operations_handbook.pdf p.3",
+        "llm_security_policy.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q02",
+      "mode": "hybrid",
+      "span_id": "3cd80bc9a3b078bd",
+      "question": "What does error code ERR-LLM-504 mean?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.2",
+        "llm_security_policy.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q03",
+      "mode": "dense",
+      "span_id": "dd14b96f6938f0ae",
+      "question": "How long does the circuit breaker stay open after repeated provider failures?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.2",
+        "vendor_brief_poisoned.pdf p.2",
+        "cloud_outage_runbook.pdf p.1",
+        "cloud_outage_runbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q03",
+      "mode": "bm25",
+      "span_id": "e5cfc6c5a5b98913",
+      "question": "How long does the circuit breaker stay open after repeated provider failures?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.2",
+        "rag_operations_handbook.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q03",
+      "mode": "hybrid",
+      "span_id": "4354bf296d544fcb",
+      "question": "How long does the circuit breaker stay open after repeated provider failures?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.2",
+        "vendor_brief_poisoned.pdf p.2",
+        "cloud_outage_runbook.pdf p.1",
+        "cloud_outage_runbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q04",
+      "mode": "dense",
+      "span_id": "da86f78744d7c8d1",
+      "question": "How often is the status page updated during an incident?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "llm_security_policy.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q04",
+      "mode": "bm25",
+      "span_id": "467169d4088fd476",
+      "question": "How often is the status page updated during an incident?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.3",
+        "llm_security_policy.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q04",
+      "mode": "hybrid",
+      "span_id": "e330910a22ba6fbc",
+      "question": "How often is the status page updated during an incident?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "llm_security_policy.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q05",
+      "mode": "dense",
+      "span_id": "e50f18605a4d4446",
+      "question": "How soon after an incident must the written review be published?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.3",
+        "vendor_brief_poisoned.pdf p.2",
+        "llm_security_policy.pdf p.2",
+        "rag_operations_handbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q05",
+      "mode": "bm25",
+      "span_id": "1a130f6891e15515",
+      "question": "How soon after an incident must the written review be published?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.2",
+        "llm_security_policy.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q05",
+      "mode": "hybrid",
+      "span_id": "a351276af4177400",
+      "question": "How soon after an incident must the written review be published?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "cloud_outage_runbook.pdf p.3",
+        "vendor_brief_poisoned.pdf p.2",
+        "llm_security_policy.pdf p.2",
+        "rag_operations_handbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q06",
+      "mode": "dense",
+      "span_id": "1313641f68c62228",
+      "question": "How frequently is the vector index backed up and how long are backups kept?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.1",
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q06",
+      "mode": "bm25",
+      "span_id": "3dea98b22b70cd63",
+      "question": "How frequently is the vector index backed up and how long are backups kept?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.1",
+        "rag_operations_handbook.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q06",
+      "mode": "hybrid",
+      "span_id": "e744cda2d7dfa99b",
+      "question": "How frequently is the vector index backed up and how long are backups kept?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.1",
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q07",
+      "mode": "dense",
+      "span_id": "a08bd738e7a44198",
+      "question": "Which alpha should be used for a query containing SKU-7781?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.2",
+        "cloud_outage_runbook.pdf p.2",
+        "rag_operations_handbook.pdf p.3",
+        "llm_security_policy.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q07",
+      "mode": "bm25",
+      "span_id": "d5aef417206d9f2d",
+      "question": "Which alpha should be used for a query containing SKU-7781?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.2",
+        "llm_security_policy.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q07",
+      "mode": "hybrid",
+      "span_id": "0f2d2886d605dab2",
+      "question": "Which alpha should be used for a query containing SKU-7781?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.2",
+        "cloud_outage_runbook.pdf p.2",
+        "rag_operations_handbook.pdf p.3",
+        "llm_security_policy.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q08",
+      "mode": "dense",
+      "span_id": "67a69e866ff7b84d",
+      "question": "What is the p95 latency target for retrieval?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.3",
+        "rag_operations_handbook.pdf p.2",
+        "cloud_outage_runbook.pdf p.1",
+        "llm_security_policy.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q08",
+      "mode": "bm25",
+      "span_id": "3c0a8a84bfb1b19c",
+      "question": "What is the p95 latency target for retrieval?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.3",
+        "llm_security_policy.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q08",
+      "mode": "hybrid",
+      "span_id": "a1e6f310230981ee",
+      "question": "What is the p95 latency target for retrieval?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.3",
+        "rag_operations_handbook.pdf p.2",
+        "cloud_outage_runbook.pdf p.1",
+        "llm_security_policy.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q09",
+      "mode": "dense",
+      "span_id": "80c50caac5115743",
+      "question": "At what daily spend does the cost alert fire?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1",
+        "vendor_brief_poisoned.pdf p.2",
+        "rag_operations_handbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q09",
+      "mode": "bm25",
+      "span_id": "f1a5d8a9d9a7bcb5",
+      "question": "At what daily spend does the cost alert fire?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.3"
+      ],
+      "labels": [
+        1
+      ]
+    },
+    {
+      "id": "q09",
+      "mode": "hybrid",
+      "span_id": "98fd8a16bede6aa6",
+      "question": "At what daily spend does the cost alert fire?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1",
+        "vendor_brief_poisoned.pdf p.2",
+        "rag_operations_handbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q10",
+      "mode": "dense",
+      "span_id": "d339cf812df6da97",
+      "question": "What happens to document chunks that contain hidden instructions for the model?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.2",
+        "llm_security_policy.pdf p.1",
+        "cloud_outage_runbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q10",
+      "mode": "bm25",
+      "span_id": "7a77c704df8e787b",
+      "question": "What happens to document chunks that contain hidden instructions for the model?",
+      "hit_rate": 1.0,
+      "mrr": 0.5,
+      "precision": 0.25,
+      "ndcg": 0.6309297535714575,
+      "retrieved": [
+        "llm_security_policy.pdf p.1",
+        "llm_security_policy.pdf p.2",
+        "rag_operations_handbook.pdf p.2",
+        "rag_operations_handbook.pdf p.1"
+      ],
+      "labels": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q10",
+      "mode": "hybrid",
+      "span_id": "18667019c4afbca6",
+      "question": "What happens to document chunks that contain hidden instructions for the model?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.2",
+        "llm_security_policy.pdf p.1",
+        "cloud_outage_runbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q11",
+      "mode": "dense",
+      "span_id": "e9c2694607ee3ee6",
+      "question": "How often must API keys be rotated?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.3",
+        "rag_operations_handbook.pdf p.1",
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q11",
+      "mode": "bm25",
+      "span_id": "5c1bc7c2dd4571f4",
+      "question": "How often must API keys be rotated?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.3",
+        "cloud_outage_runbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q11",
+      "mode": "hybrid",
+      "span_id": "f7662d5c0ab711ab",
+      "question": "How often must API keys be rotated?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.3",
+        "rag_operations_handbook.pdf p.1",
+        "cloud_outage_runbook.pdf p.1",
+        "rag_operations_handbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q12",
+      "mode": "dense",
+      "span_id": "6169638eb283d354",
+      "question": "What is the difference between direct and indirect prompt injection?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.1",
+        "llm_security_policy.pdf p.2",
+        "llm_security_policy.pdf p.3",
+        "cloud_outage_runbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q12",
+      "mode": "bm25",
+      "span_id": "71ef40aa9192423d",
+      "question": "What is the difference between direct and indirect prompt injection?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.1",
+        "llm_security_policy.pdf p.2"
+      ],
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q12",
+      "mode": "hybrid",
+      "span_id": "560f3cc7937d8f29",
+      "question": "What is the difference between direct and indirect prompt injection?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "llm_security_policy.pdf p.1",
+        "llm_security_policy.pdf p.2",
+        "llm_security_policy.pdf p.3",
+        "cloud_outage_runbook.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q13",
+      "mode": "dense",
+      "span_id": "5505ca912306d375",
+      "question": "What is the contract term with Northwind Data Labs?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "vendor_brief_poisoned.pdf p.2",
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1",
+        "llm_security_policy.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "q13",
+      "mode": "bm25",
+      "span_id": "a022f2cb378d0a31",
+      "question": "What is the contract term with Northwind Data Labs?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "vendor_brief_poisoned.pdf p.2",
+        "llm_security_policy.pdf p.3"
+      ],
+      "labels": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "q13",
+      "mode": "hybrid",
+      "span_id": "d59dca05a38fbc5b",
+      "question": "What is the contract term with Northwind Data Labs?",
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "precision": 0.25,
+      "ndcg": 1.0,
+      "retrieved": [
+        "vendor_brief_poisoned.pdf p.2",
+        "rag_operations_handbook.pdf p.3",
+        "cloud_outage_runbook.pdf p.1",
+        "llm_security_policy.pdf p.1"
+      ],
+      "labels": [
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

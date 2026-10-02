@@ -1,0 +1,67 @@
+# docker compose up -d   ->  Weaviate :8081 (host) /:50051, Phoenix :6006, RAG API :8000
+services:
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:1.39.5
+    command: ["--host", "0.0.0.0", "--port", "8080", "--scheme", "http"]
+    ports:
+      - "8081:8080"     # host 8081: Jenkins from Week 1 already uses 8080
+      - "50051:50051"
+    environment:
+      QUERY_DEFAULTS_LIMIT: "25"
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "true"   # local development only
+      PERSISTENCE_DATA_PATH: /var/lib/weaviate
+      DEFAULT_VECTORIZER_MODULE: none                   # we supply our own vectors
+      CLUSTER_HOSTNAME: node1
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:8080/v1/.well-known/ready || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  phoenix:
+    build: .
+    image: monitored-rag:latest
+    command: ["python", "scripts/launch_phoenix.py"]   # calls px.launch_app()
+    ports:
+      - "6006:6006"   # UI + OTLP/HTTP collector (/v1/traces)
+      - "4317:4317"   # OTLP/gRPC collector
+    environment:
+      PHOENIX_WORKING_DIR: /phoenix-data
+    volumes:
+      - phoenix_data:/phoenix-data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:6006/healthz')"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+
+  api:
+    image: monitored-rag:latest
+    command: ["uvicorn", "rag.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      WEAVIATE_HOST: weaviate
+      PHOENIX_COLLECTOR_ENDPOINT: http://phoenix:6006/v1/traces
+      PHOENIX_BASE_URL: http://phoenix:6006
+    volumes:
+      - ./data:/app/data
+      - ./docs:/app/docs
+      - ./eval:/app/eval
+    depends_on:
+      weaviate:
+        condition: service_healthy
+      phoenix:
+        condition: service_healthy
+    restart: on-failure
+
+volumes:
+  weaviate_data:
+  phoenix_data:

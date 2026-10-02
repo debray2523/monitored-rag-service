@@ -1,0 +1,24 @@
+# Python 3.12. torch is installed separately from the CPU-only index (see Dockerfile / guide).
+# --- RAG service ---
+weaviate-client==4.23.1
+sentence-transformers==6.1.0
+pypdf==6.19.0
+fastapi==0.141.1
+uvicorn==0.54.0
+openai==3.19.2
+httpx==0.28.1
+python-dotenv==1.2.3
+pandas==2.3.3
+# --- Observability: Arize Phoenix + OpenInference / OpenTelemetry ---
+arize-phoenix==20.16.0
+arize-phoenix-client==3.5.0
+openinference-instrumentation==0.1.66
+openinference-semantic-conventions==0.1.39
+opentelemetry-sdk==1.45.0
+opentelemetry-exporter-otlp-proto-http==1.45.0
+# graphql-core 3.3 breaks Phoenix 20.16 annotation summaries ("Int cannot represent
+# non-integer value: <int64>"); 3.2.x works.
+graphql-core==3.2.13
+# --- sample data and tests ---
+reportlab==5.0.1
+pytest==9.1.1

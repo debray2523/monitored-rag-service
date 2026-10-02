@@ -1,0 +1,5 @@
+11 chunks from 4 PDFs
+  QUARANTINED vendor_brief_poisoned.pdf p.1: instruction_override, data_exfiltration
+Embedded with sentence-transformers/all-MiniLM-L6-v2 (384 dims) in 4.5s
+Weaviate collection 'DocChunk': 11 objects, 1 quarantined
+  flagged in store: vendor_brief_poisoned.pdf p.1 ['instruction_override', 'data_exfiltration']

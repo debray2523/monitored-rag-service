@@ -1,0 +1,49 @@
+QUERY: Which alpha is used for SKU-7781 lookups?   (hybrid alpha=0.5: 0 = pure BM25, 1 = pure vector)
+  [dense]
+    1.  0.3983  rag_operations_handbook.pdf p.2  2. Hybrid search tuning Hybrid search blends dense vector similarity w
+    2.  0.2247  rag_operations_handbook.pdf p.3  3. Monitoring Dashboards track p95 retrieval latency, with a target be
+    3.  0.2013  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+  [bm25]
+    1.  3.8274  rag_operations_handbook.pdf p.2  2. Hybrid search tuning Hybrid search blends dense vector similarity w
+  [hybrid]
+    1.  1.0000  rag_operations_handbook.pdf p.2  2. Hybrid search tuning Hybrid search blends dense vector similarity w
+         explain: Hybrid (Result Set keyword,bm25) Document 27b5843e-23ec-58b8-ae54-f8cd38d19584: original score 3.8274052, normalized score: 0.5 - Hybrid (Result Set vector,hybr
+    2.  0.3037  rag_operations_handbook.pdf p.3  3. Monitoring Dashboards track p95 retrieval latency, with a target be
+         explain: Hybrid (Result Set vector,hybridVector) Document 4a006bcb-37db-5fcd-858e-5e2a01f8e803: original score 0.22472489, normalized score: 0.30372408
+    3.  0.2772  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+         explain: Hybrid (Result Set vector,hybridVector) Document 27b2e475-5e50-5ca3-97c7-03e07aa06be9: original score 0.20125973, normalized score: 0.2771841
+
+QUERY: How long may the API stay down after an outage?   (hybrid alpha=0.5: 0 = pure BM25, 1 = pure vector)
+  [dense]
+    1.  0.5286  cloud_outage_runbook.pdf p.1  Cloud Outage Runbook: RAG Platform 1. Service levels The customer-faci
+    2.  0.3712  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+    3.  0.2889  llm_security_policy.pdf p.3  3. Data handling Customer personal data must never be placed in prompt
+  [bm25]
+    1.  1.7840  cloud_outage_runbook.pdf p.1  Cloud Outage Runbook: RAG Platform 1. Service levels The customer-faci
+    2.  1.1500  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+    3.  0.8180  rag_operations_handbook.pdf p.2  2. Hybrid search tuning Hybrid search blends dense vector similarity w
+  [hybrid]
+    1.  1.0000  cloud_outage_runbook.pdf p.1  Cloud Outage Runbook: RAG Platform 1. Service levels The customer-faci
+         explain: Hybrid (Result Set keyword,bm25) Document ccb4aea9-78f7-50ec-8880-daea515e1022: original score 1.7839764, normalized score: 0.5 - Hybrid (Result Set vector,hybr
+    2.  0.5805  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+         explain: Hybrid (Result Set keyword,bm25) Document 27b2e475-5e50-5ca3-97c7-03e07aa06be9: original score 1.1500406, normalized score: 0.21703595 - Hybrid (Result Set vect
+    3.  0.2920  llm_security_policy.pdf p.3  3. Data handling Customer personal data must never be placed in prompt
+         explain: Hybrid (Result Set keyword,bm25) Document 007289ae-39c6-5140-8b84-6cc7da62344d: original score 0.6638062, normalized score: 0 - Hybrid (Result Set vector,hybrid
+
+QUERY: How long may the API stay down after an outage?   (hybrid alpha=0.25: 0 = pure BM25, 1 = pure vector)
+  [dense]
+    1.  0.5286  cloud_outage_runbook.pdf p.1  Cloud Outage Runbook: RAG Platform 1. Service levels The customer-faci
+    2.  0.3712  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+    3.  0.2889  llm_security_policy.pdf p.3  3. Data handling Customer personal data must never be placed in prompt
+  [bm25]
+    1.  1.7840  cloud_outage_runbook.pdf p.1  Cloud Outage Runbook: RAG Platform 1. Service levels The customer-faci
+    2.  1.1500  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+    3.  0.8180  rag_operations_handbook.pdf p.2  2. Hybrid search tuning Hybrid search blends dense vector similarity w
+  [hybrid]
+    1.  1.0000  cloud_outage_runbook.pdf p.1  Cloud Outage Runbook: RAG Platform 1. Service levels The customer-faci
+         explain: Hybrid (Result Set keyword,bm25) Document ccb4aea9-78f7-50ec-8880-daea515e1022: original score 1.7839764, normalized score: 0.75 - Hybrid (Result Set vector,hyb
+    2.  0.5073  cloud_outage_runbook.pdf p.2  2. Provider failover Generation uses Groq as the primary provider and 
+         explain: Hybrid (Result Set keyword,bm25) Document 27b2e475-5e50-5ca3-97c7-03e07aa06be9: original score 1.1500406, normalized score: 0.32555392 - Hybrid (Result Set vect
+    3.  0.1460  llm_security_policy.pdf p.3  3. Data handling Customer personal data must never be placed in prompt
+         explain: Hybrid (Result Set keyword,bm25) Document 007289ae-39c6-5140-8b84-6cc7da62344d: original score 0.6638062, normalized score: 0 - Hybrid (Result Set vector,hybrid
+

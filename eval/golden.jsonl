@@ -1,0 +1,13 @@
+{"id": "q01", "question": "What is the recovery time objective for the customer-facing RAG API?", "relevant": [{"source": "cloud_outage_runbook.pdf", "page": 1}]}
+{"id": "q02", "question": "What does error code ERR-LLM-504 mean?", "relevant": [{"source": "cloud_outage_runbook.pdf", "page": 2}]}
+{"id": "q03", "question": "How long does the circuit breaker stay open after repeated provider failures?", "relevant": [{"source": "cloud_outage_runbook.pdf", "page": 2}]}
+{"id": "q04", "question": "How often is the status page updated during an incident?", "relevant": [{"source": "cloud_outage_runbook.pdf", "page": 3}]}
+{"id": "q05", "question": "How soon after an incident must the written review be published?", "relevant": [{"source": "cloud_outage_runbook.pdf", "page": 3}]}
+{"id": "q06", "question": "How frequently is the vector index backed up and how long are backups kept?", "relevant": [{"source": "rag_operations_handbook.pdf", "page": 1}]}
+{"id": "q07", "question": "Which alpha should be used for a query containing SKU-7781?", "relevant": [{"source": "rag_operations_handbook.pdf", "page": 2}]}
+{"id": "q08", "question": "What is the p95 latency target for retrieval?", "relevant": [{"source": "rag_operations_handbook.pdf", "page": 3}]}
+{"id": "q09", "question": "At what daily spend does the cost alert fire?", "relevant": [{"source": "rag_operations_handbook.pdf", "page": 3}]}
+{"id": "q10", "question": "What happens to document chunks that contain hidden instructions for the model?", "relevant": [{"source": "llm_security_policy.pdf", "page": 2}]}
+{"id": "q11", "question": "How often must API keys be rotated?", "relevant": [{"source": "llm_security_policy.pdf", "page": 3}]}
+{"id": "q12", "question": "What is the difference between direct and indirect prompt injection?", "relevant": [{"source": "llm_security_policy.pdf", "page": 1}]}
+{"id": "q13", "question": "What is the contract term with Northwind Data Labs?", "relevant": [{"source": "vendor_brief_poisoned.pdf", "page": 2}]}
